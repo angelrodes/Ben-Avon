@@ -2,16 +2,18 @@
 
 We built some terrain and cosmonuclide accumulation models to interpret a cosmonuclide depth profile from a vertical core taken at the top of a [tor](https://en.wikipedia.org/wiki/Tor_(rock_formation)) close to [Ben Avon](https://en.wikipedia.org/wiki/Ben_Avon).
 
-# Core
+## Core
 
 A 3.5 m vertical core was taken inside a pothole at the top of the granitic tor. An extra "Top sample" was taken at the top surface of the tor, 123 cm above the base of the pothole.
 
 ![DSC_0156_sampling](https://github.com/angelrodes/Ben-Avon/assets/53089531/7beb17ff-9c9e-44e4-a5be-2e8e80ae10bb)\
 _Core-sampling at the top of the tor._
 
-# Cosmogenic data
+# Methods
 
-## Concentrations
+## Cosmogenic data
+
+### Concentrations
 
 <sup>10</sup>Be, <sup>26</sup>Al, and <sup>21</sup>Ne concentrations were measured in quartz cores from the top and core samples.
 
@@ -24,13 +26,43 @@ _Sample concentrations are depicted with red stars and one-sigma uncertainties a
 - [<sup>26</sup>Al]/[<sup>10</sup>Be] ratios are between 6.3 and 10.4. This values are around surface production rate ratios (~7). This match a recent (not depleted) near-surface accumulation.
 - [<sup>21</sup>Ne]/[<sup>10</sup>Be] ratios are between one and two orders of manitude higher than surface prodution rates (~4), even considering a non-cosmogenic [<sup>21</sup>Ne] of 22 Matoms/g (the lowest <sup>21</sup>Ne concentration).
 
-This suggests that most of the <sup>21</sup>Ne formed near the surface (near-surface attenuation distribution) before most of the <sup>10</sup>Be and <sup>26</sup>Al, and then the quartz was shielded from comic radiation enough time for most of the <sup>10</sup>Be and <sup>26</sup>Al to decay. The recent near-surface exposure formed most of the <sup>10</sup>Be and <sup>26</sup>Al (natural ratios) and a small fraction of the toal <sup>21</sup>Ne concentrations.
+This dataset suggests that most of the <sup>21</sup>Ne formed near the surface (near-surface attenuation distribution) before most of the <sup>10</sup>Be and <sup>26</sup>Al, and then the quartz was shielded from comic radiation enough time for most of the <sup>10</sup>Be and <sup>26</sup>Al to decay. The recent near-surface exposure formed most of the <sup>10</sup>Be and <sup>26</sup>Al (natural ratios) and a small fraction of the toal <sup>21</sup>Ne concentrations.
 
-## Surface production rates
+### Surface production rates
 
 We calculated the apparent <sup>10</sup>Be, <sup>26</sup>Al, and <sup>21</sup>Ne ages of the top sample using [The online calculators formerly known as the CRONUS-Earth online calculators v.3](https://hess.ess.washington.edu/math/v3/v3_age_in.html). We used the LSDn ages and the spreadsheet from the [Average cosmogenic production rate calculator](https://github.com/angelrodes/average_cosmogenic_production_rate_calculator) to calculte the surface production rates for <sup>10</sup>Be, <sup>26</sup>Al, and <sup>21</sup>Ne by spallation and muons, and their correspondig attenuation lengths, according to the approximations shown in [Rodés (2021)](https://doi.org/10.3390/geosciences11090362).
 
-# Digital elevation model
+## Digital elevation model
 
+### Core location
 
+### Sources of elevation data
 
+### Radial DEM
+
+### Tor areas
+
+## Shielding factors
+
+## Erosion models
+
+## Glacial model
+
+# Results
+
+## Erosion Models
+
+## Glacial models
+
+# Discussion
+
+# Conclusions
+
+- Fitted erosion models suggest that the tor fromed by differential erosion rather than by epigenesis (inherited relief) or lateral erosion. This erosion model could correspond to:
+  - Differential erosion due to compositional inhomogeneities in the granite.
+  - Differential erosion due to rheological inhomogeneities (e.g. joint spacing).
+  - Erosion of ice or sediments covering the tor surface (exhumation).
+- Fitted glacial model indicate that the tor was exposed near the surface for at least 2 Ma and then covered by ice during part of the Pliocene and most of the Quaternary. However, the tor is in an area that has been ice-free at least since the Yonger Dryas.
+- Two scenarios could explain the conditions needed to achieve long periods of shielding since the Pliocene in a place that is now ice-free and exposed to cosmic radiation:
+  - The tor was at the bed of a glacial valley at some point during the Pliocene and was covered by a thick till deposit that diasappeared during the Quaternary due to lateral migration of the glacial valley.
+  - The tor formed at a higher elevation during the Pliocene and covered by ice through most Plio-Quaternary glaciations while the whole area sank due to glacial isostatic adjustment.
