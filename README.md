@@ -4,7 +4,7 @@ We built some terrain and cosmonuclide accumulation models to interpret a cosmon
 
 ## Core
 
-A 3.5 m vertical core was taken inside a pothole at the top of the granitic tor. An extra "Top sample" was taken at the top surface of the tor, 123 cm above the base of the pothole.
+A 3.5 m vertical core was taken inside a pothole at the top of the granitic tor. An additional "Top sample" was taken at the top surface of the tor, 123 cm above the base of the pothole.
 
 ![DSC_0156_sampling](https://github.com/angelrodes/Ben-Avon/assets/53089531/7beb17ff-9c9e-44e4-a5be-2e8e80ae10bb)\
 _Core-sampling at the top of the tor._
@@ -15,18 +15,18 @@ _Core-sampling at the top of the tor._
 
 ### Concentrations
 
-<sup>10</sup>Be, <sup>26</sup>Al, and <sup>21</sup>Ne concentrations were measured in quartz cores from the top and core samples.
+<sup>10</sup>Be, <sup>26</sup>Al, and <sup>21</sup>Ne concentrations were measured in quartz from the top and core samples.
 
 ![image](https://github.com/angelrodes/Ben-Avon/assets/53089531/c6ef81bc-044b-4fdc-b6b8-21ae6858343a)\
 _Sample concentrations are depicted with red stars and one-sigma uncertainties are represented by left and right-pointing triangles._
 
 - Both <sup>10</sup>Be and <sup>26</sup>Al profiles show an exponential distribution with an apparent attenuation length of c. 0.5 m, similar to the spallation attenuation length in granites (ρ=2.6 g/cm<sup>2</sup>), which is Λ = 160/2.6 ≈ 60 cm. This is compatible with a near-surface accumulation, where spallation is the main process that produce cosmogenic isotopes.
-- The <sup>21</sup>Ne profile also show a similar "near-surface" attenuation, excluding the top sample, thath show a <sup>21</sup>Ne concentration lower than the highest sample from the core. 
-- The <sup>21</sup>Ne profile is more scattered than the <sup>10</sup>Be and <sup>26</sup>Al profiles and do not converge to a 0 concentration at depth. This is a typical distribution of stable cosmonuclides profiles, as the quartz accumulates <sup>21</sup>Ne since its formation. This apparent "extra" <sup>21</sup>Ne concentration of c. 20 Matoms/g can correspond, either to nucleogenic <sup>21</sup>Ne, either to <sup>21</sup>Ne accumulated several meters below the surface by muonic radiation.
-- [<sup>26</sup>Al]/[<sup>10</sup>Be] ratios are between 6.3 and 10.4. This values are around surface production rate ratios (~7). This match a recent (not depleted) near-surface accumulation.
-- [<sup>21</sup>Ne]/[<sup>10</sup>Be] ratios are between one and two orders of manitude higher than surface prodution rates (~4), even considering a non-cosmogenic [<sup>21</sup>Ne] of 22 Matoms/g (the lowest <sup>21</sup>Ne concentration).
+- The <sup>21</sup>Ne profile also show a similar "near-surface" attenuation, excluding the top sample, that show a <sup>21</sup>Ne concentration lower than the highest sample from the core. 
+- The <sup>21</sup>Ne profile is more scattered than the <sup>10</sup>Be and <sup>26</sup>Al profiles and do not converge to a 0 concentration at depth. This is a typical distribution of stable cosmonuclides profiles, as the quartz accumulates <sup>21</sup>Ne since its formation. This apparent "extra" <sup>21</sup>Ne concentration of c. 20 Matoms/g correspond, either to nucleogenic <sup>21</sup>Ne, either to <sup>21</sup>Ne accumulated several meters below the surface by muonic radiation.
+- [<sup>26</sup>Al]/[<sup>10</sup>Be] ratios are between 6.3 and 10.4. This values are around surface production rate ratios (~7). These non-depleted ratios indicate that most of <sup>10</sup>Be and <sup>26</sup>Al atoms formed recently compared to their half-lifes (1.4 and 0.7 Ma respectively).
+- [<sup>21</sup>Ne]/[<sup>10</sup>Be] ratios are between one and two orders of manitude higher than surface prodution rates (~4), even considering a non-cosmogenic [<sup>21</sup>Ne] of 22 Matoms/g (the lowest <sup>21</sup>Ne concentration). As the [<sup>26</sup>Al]/[<sup>10</sup>Be] ratios are not depleted and the [<sup>10</sup>Be]/[<sup>21</sup>Ne] ratios are highly depleted, we should assume that a high proportion of the <sup>21</sup>Ne atoms formed much before that most <sup>10</sup>Be and <sup>26</sup>Al atoms compared to their half-lifes.
 
-This dataset suggests that most of the <sup>21</sup>Ne formed near the surface (near-surface attenuation distribution) before most of the <sup>10</sup>Be and <sup>26</sup>Al, and then the quartz was shielded from comic radiation enough time for most of the <sup>10</sup>Be and <sup>26</sup>Al to decay. The recent near-surface exposure formed most of the <sup>10</sup>Be and <sup>26</sup>Al (natural ratios) and a small fraction of the toal <sup>21</sup>Ne concentrations.
+This dataset suggests that most of the <sup>21</sup>Ne formed near the surface (near-surface attenuation distribution) before most of the <sup>10</sup>Be and <sup>26</sup>Al, and then the quartz was shielded from comic radiation enough time for most of the <sup>10</sup>Be and <sup>26</sup>Al to decay. The recent near-surface exposure formed most of the <sup>10</sup>Be and <sup>26</sup>Al (natural ratios) and a small fraction of the total <sup>21</sup>Ne concentrations.
 
 ### Surface production rates
 
@@ -34,11 +34,34 @@ We calculated the apparent <sup>10</sup>Be, <sup>26</sup>Al, and <sup>21</sup>Ne
 
 ## Digital elevation model
 
+As the samples are taken from inside a odd-shaped landform and the samples are exposed to cosmic rays that cross the tor in high variaty of angles and rock thicknesses, a digital elevation model (DEM) is needed to calculate how much cosmic radiation the samples received during the geological history of the tor.
+
 ### Core location
+
+The GPS data taken in the field during the sampling campaign locates the core at the gographical coordinate 57.109150 N, -3.462608 E. However, according to [Google Maps](https://maps.app.goo.gl/z3deD5SJwoSBNCmq9) and the digital terrain model (DMT) used here, the top of the tor is located 9.7 m to the north of this location. Therefore, we used the coordinates [ 311510 , 802980.7 ] in the British National Grid for the location of the samples.
+
+![coordinates_correction](https://github.com/angelrodes/Ben-Avon/assets/53089531/d318bd7f-49ba-442c-b67b-8e7072e1aeb3)\
+_Original GPS coordinates on Google Earth and distance to the top of the tor._
+
+![coordinates_correction_DEM](https://github.com/angelrodes/Ben-Avon/assets/53089531/b7bad8fb-0f06-447a-a1b6-5c781e9e20db)\
+_Original and corrected coordinates on the DMT used._
 
 ### Sources of elevation data
 
+In order to simulate the cosmic irradiaton of the core samples, we need a DEM of the terrain at the area where the tor is located, but also a very detailed surface model of the tor. To achieve this, we combined the following sources of terrain data:
+
+- 5-m Digital Model of the Terrain from [Digimap](https://digimap.edina.ac.uk/).
+- A 6 meter wide E-W cross section measured in the field during the sampling campaing.
+- A picture showing the S-N contour of the tor. This contour was digitalised using g3data software ([Frantz, 2000](https://manpages.ubuntu.com/manpages/jammy/man1/g3data.1.html)).
+
+![DSC_0136_g3data_S-N](https://github.com/angelrodes/Ben-Avon/assets/53089531/0fa6dd2c-26c4-4b48-a261-534f4f6220df)\
+_Digitalised picture using G3data Graph Analyser. The person at the right of the picture was used as scale._
+
+![Elevation_data_sources](https://github.com/angelrodes/Ben-Avon/assets/53089531/e10d690e-736e-477f-9f4a-bd79f41bcc8b)\
+_DMT from [Digimap](https://digimap.edina.ac.uk/) and digitalised data from field notes and one picture. Sample positions are depicted by red stars._
+
 ### Radial DEM
+
 
 ### Tor areas
 
