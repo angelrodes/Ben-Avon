@@ -133,12 +133,14 @@ _Best fit of each of the tested model (blue lines) and sample concentrations (re
 ![results_glacial_model](https://github.com/angelrodes/Ben-Avon/assets/53089531/fbe35af9-1d3c-4a6e-bea6-81ab1831e886)\
 _Upper graphs: best fit of the tested model (blue lines) and sample concentrations (red stars). Lower graph: The blue star show the formation of the landform and the blue line its evolution respect the δ<sup>18</sup>O curve. When the blue line is above the black δ<sup>18</sup>O curve, the landform is exposed to cosmic radiation; and when the blue line is below the black δ<sup>18</sup>O curve, the landform does not receive any cosmic radiation due to complete ice-shielding. Note that, in contrast to nunataks, higher δ<sup>18</sup>O thresholds correspond to lower elevations when simulating ice-cover by mid-latitude glaciers. This is because lower areas are less likely covered by valley glaciers and higher areas are less likely covered by polar ice-sheets in nunataks._
 
+Although the model dos not fit the <sup>10</sup>Be and <sup>26</sup>Al profiles as good as the erosion models, this is the only one that succesfully emulates the shape of the <sup>21</sup>Ne profile while fitting the <sup>10</sup>Be profile. Assuming a possible non-cosmogenic <sup>21</sup>Ne contributon of ~20 Matoms/g, this model fits the <sup>21</sup>Ne dataset sufficiently.
+
 The best fitting complex-exposure glacial model implies a 6.8 Ma history:
 
   - From 6.8 to ~4 Ma, the landform was mostly exposed to cosmic radiation near the surface.
   - Since ~4 Ma, the landform was mostly shielded from cosmic radiation due to ice-cover.
 
-The best fitting δ<sup>18</sup>O threshold is much lower than current δ<sup>18</sup>O values. In this mid-latitude context, the best fitting δ<sup>18</sup>O threshold correlate with a much higher elevation that today should be covered by a glacier. However, glacial isostasy could explain long term subsidence of the Cairngorms, slightly moving the elevation of the tor to lower (less glaciated) conditions during the Quaternary. This vertical migration of the surface is not simulated in the glacial model.
+The best fitting δ<sup>18</sup>O threshold is much lower than current δ<sup>18</sup>O values. In this mid-latitude context, the best fitting δ<sup>18</sup>O threshold correlate with a much higher elevation that today should be covered by a glacier. However, glacial isostasy could explain long term subsidence of the Cairngorms, slightly moving the elevation of the tor to lower (less glaciated) conditions during the Quaternary. This vertical migration of the surface is not simulated in the glacial model. The Quaternary subsidence of the Cairgnoms could have allowed this area to be ice-free during part of the last few glacialy cycles, permitting the accumulation of the recent <sup>10</sup>Be and <sup>26</sup>Al.
 
 # Conclusions
 
