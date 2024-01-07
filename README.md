@@ -112,20 +112,36 @@ _Distriburtion of shielding factors of each DEM generated for each erosion model
 
 ## Glacial model
 
+As the <sup>10</sup>Be, <sup>26</sup>Al, and <sup>21</sup>Ne concentrations indicate that this landform has been thorugh a complex exposure history (at least exposure-burial-exposure), we tested the model used in [Sudgen _et al._ (2017)](https://doi.org/10.1016/j.epsl.2017.04.006) in this dataset. This model simulates the effect of intermittent glacial cover of the surface by considering that the samples are exposed to near-surface cosmic radiation during ice-free stages (interglacials) and shielded form cosmic radiation during ice-covered periods (glaciations). The distribution of glacial-interglacial stages is based on the δ<sup>18</sup>O curve and the δ<sup>18</sup>O threshold simulated for each model. The calculator simulates and finds both the age of the landform and the δ<sup>18</sup>O threshold that best fit the cosmogenic depth profiles. The composite δ<sup>18</sup>O curve was taken from the [NUNAIT code](https://github.com/angelrodes/NUNAIT) described in [Rodés (2021)](https://doi.org/10.3390/geosciences11090362), as it is optimised for cosmogenic accumulation calculations.
 
+![Climate_curve](https://github.com/angelrodes/Ben-Avon/assets/53089531/bd3a4804-6bd7-403f-9eda-13d54c004971)\
+_Composite climate proxy used to simulate exposure and burial stages through the glacial history of the surface._
 
 # Results
 
 ## Erosion Models
 
-## Glacial models
+![results_erosion_models](https://github.com/angelrodes/Ben-Avon/assets/53089531/f86528de-261f-4fd6-99fe-7b297687c949)\
+_Best fit of each of the tested model (blue lines) and sample concentrations (red stars). Vertical and horizontal exhumation rates of the best fitting models are shown in bold._
 
-# Discussion
+- As expected, all these models fail to simulate the high <sup>21</sup>Ne concentrations.
+- Models A and B (antecedent and exhumed landform) simulate the <sup>10</sup>Be and <sup>26</sup>Al depth profiles much better than model C (ledge migration).
+- Both best fitting exhumation rates of models A abd B suggest that the top of the tor accumulated <sup>10</sup>Be and <sup>26</sup>Al equivalent to an apparent exposure time of 210 ka.
+
+## Glacial model
+
+![results_glacial_model](https://github.com/angelrodes/Ben-Avon/assets/53089531/fbe35af9-1d3c-4a6e-bea6-81ab1831e886)\
+_Upper graphs: best fit of the tested model (blue lines) and sample concentrations (red stars). Lower graph: The blue star show the formation of the landform and the blue line its evolution respect the δ<sup>18</sup>O curve. When the blue line is above the black δ<sup>18</sup>O curve, the landform is exposed to cosmic radiation; and when the blue line is below the black δ<sup>18</sup>O curve, the landform does not receive any cosmic radiation due to complete ice-shielding. Note that, in contrast to nunatks, higher δ<sup>18</sup>O thersholds correspond to lower elevations when simulating ice-cover by mid-latitude glaciers. This is because lower areas are less likely covered by valley glaciers and higher areas are less likely covered by polar ice-sheets in nunataks._
+
+The best fitting complex-exposure glacial model implies a 6.8 Ma history:
+  - From 6.8 to ~4 Ma, the landform was mostly exposed to cosmic radiation near the surface.
+  - Since ~4 Ma, the landform was mostly shielded from cosmic radiation due to ice-cover.
+The best fitting δ<sup>18</sup>O thershold is much lower than current δ<sup>18</sup>O values. In this mid-latitude context, the best fitting δ<sup>18</sup>O thershold correlate with a much higher elevation that today should be covered by a glacier. However, glacial isostasy could explain long term subsidence of the Cairngorms, slightly moving the elevation of the tor to lower (less glaciated) conditions during the Quaternary. This vertical migration of the surface is not simulated the glacial model.
 
 # Conclusions
 
-- Fitted erosion models suggest that the tor fromed by differential erosion or by epigenesis (inherited relief) rather than lateral erosion.
-- Fitted glacial model indicate that the tor was exposed near the surface for at least 2 Ma and then covered by ice during part of the Pliocene and most of the Quaternary. However, the tor is in an area that has been ice-free at least since the Yonger Dryas.
+- Fitted erosion models suggest that the tor formed by differential erosion or by epigenesis (inherited relief) rather than lateral erosion.
+- Fitted glacial model indicate that the tor was exposed near the surface for at least 2 Ma and then covered by ice during part of the Pliocene and most of the Quaternary. However, the tor is in an area that has been ice-free at least since the Yonger Dryas. Also the <sup>10</sup>Be and <sup>26</sup>Al data and the erosion models indicate recent near-surface conditions for c. 200 ka.
 - Two scenarios could explain the conditions needed to achieve long periods of shielding since the Pliocene in a place that is now ice-free and exposed to cosmic radiation:
   - The tor was at the bed of a glacial valley at some point during the Pliocene and was covered by a thick till deposit that diasappeared during the Quaternary due to lateral migration of the glacial valley.
   - The tor formed at a higher elevation during the Pliocene and covered by ice through most Plio-Quaternary glaciations while the whole area sank due to glacial isostatic adjustment.
