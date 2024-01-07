@@ -1,9 +1,0 @@
-
-Easting: 311510
-Longitude: -3.462608
-Lng DecMinSec: -3° 27' 45.39"
-
-Northing: 802971
-Latitude: 57.109150
-Lat DecMinSec: 57° 6' 32.94"
-
