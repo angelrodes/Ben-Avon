@@ -62,8 +62,18 @@ _DMT from [Digimap](https://digimap.edina.ac.uk/) and digitalised data from fiel
 
 ### Radial DEM
 
+Using all the topographic data, a polar mesh centered at the core position was generated. 100 azimuths are equally spaced every 3.6 degreees. Radial distances are logarithmic-like spaced to get a good resolution of the samples' shielding.
+
+![3-D_DEM](https://github.com/angelrodes/Ben-Avon/assets/53089531/d0edf8c9-098f-4983-add8-4e2303495450)\
+_Radial DEM generated form the three sources of topographic data. The left image shows the full DEM and the right image is restricted to the tor area. Sample locations, partially hidded by the grid, are depicted by red stars._
 
 ### Tor areas
+
+Tor areas were defined by areas protruding more than 0.5 above a smmothed surface intepolated from areas far from the center of the grid.
+
+![DEM_and_satellite](https://github.com/angelrodes/Ben-Avon/assets/53089531/55693274-2504-478d-9250-f2f3a9c529b7)\
+_Defined tor areas compared to the satellite image from the same area._
+
 
 ## Shielding factors
 
