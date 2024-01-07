@@ -74,10 +74,24 @@ Tor areas were defined by areas protruding more than 0.5 above a smmothed surfac
 ![DEM_and_satellite](https://github.com/angelrodes/Ben-Avon/assets/53089531/55693274-2504-478d-9250-f2f3a9c529b7)\
 _Defined tor areas compared to the satellite image from the same area._
 
+## Erosion models
+
+Three erosion models were build in order to test three different scenarios for the formation of the tor:
+
+- Model A: This model considers the tor as an antecedent landform. The relief migrates down with time with a constat erosion rate for all points of the DEM. In this model, the tor is located in an area that was originally more prominent that the sourrounding areas. The surface position is calculated by adding vertical lowerings to the current DEM.
+- Model B: This model simulates that the the tor is "exhumed" by differential erosion from an original smooth surface. In this model, the tor formed due to its differential erosionability (e.g. harder granite or less joints). The surface position is calculated by adding vertical lowerings to ta smooth version of the current DEM excluding the tors. In the defined tor areas, the surface is calculated as the maximum between the smooothed DEM and the current DEM.
+- Model C: This model assumes that the tor is formed by lateral erosion. In this model, the tor is conserved due to its distance to the areas where ledge migration initiated. The surface positions are calculated by selecting the elevations of the current DEM and of an elevated smoothed DEM covering the tor. The selection is based in the distance to the center of the tor and the "horizontal lowering" for each evolution stage.
+
+![ModelA](https://github.com/angelrodes/Ben-Avon/assets/53089531/279f01f0-ed9c-4cc6-9875-0961158865cc)\
+_Model A: Antecedent landform._
+
+![ModelB](https://github.com/angelrodes/Ben-Avon/assets/53089531/626c3d7b-61ec-4bc9-a453-c92bf708d0a0)\
+_Model B: Exhumed landform._
+
+![ModelC](https://github.com/angelrodes/Ben-Avon/assets/53089531/e477cf28-28f9-4cff-8306-32b47755a3bf)\
+_Model C: Ledge migration._
 
 ## Shielding factors
-
-## Erosion models
 
 ## Glacial model
 
