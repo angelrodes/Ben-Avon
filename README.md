@@ -93,7 +93,26 @@ _Model C: Ledge migration._
 
 ## Shielding factors
 
+In order to calculate the production of cosmogenic isotopes in samples below the surface, we need to calculate how much of the cosmic radiation is shielded in all directions by the rock between the sample and the surface. [Balco (2014)](https://doi.org/10.1016/j.quageo.2013.12.002) described a method for estimating cosmic-ray shielding by oddly shaped objects. Here we developed a slightly simpler method that require affordable computing times for large DEMs. Instead of randomizing the trajectory of the cosmic rays that hit the sample, our method calculates the attenuation of the cosmic rays that cross any point of the DEM above the sample position. As we built a radial DEM with logarithmic-like distance distribution, our method simulates the irradiation of the sample form an homogeneous distriburtion of zenith and azimuthal angles for the cosmic rays. 
+
+![Shielding_method](https://github.com/angelrodes/Ben-Avon/assets/53089531/36446801-ed40-46c7-aa93-4e46375ec4ce)\
+_Shielding calculations._
+
+For each trajectory, the model calculates the distance (d) between the sample and the surface and the zenith angle (φ). The attenuation of the cosmic ray for this trajectory is calcualted as e<sup>-d*ρ/Λ</sup>, where ρ is the density of the granite (2.6 kg/L) and Λ is the attenuation length of the cosmic radiation (160 g/cm<sup>2</sup> for spallation and 850, 5000, and 500 g/cm<sup>2</sup> for muons).
+
+All the attennuations calculated are weighted by N<sub>ΔΦ</sub> · _sin_(φ)<sup>2.3</sup>, where N<sub>ΔΦ</sub> is the number of cosmic ray for each of the 100 zenith angle groups (one every 0.9°), and _sin_(φ)<sup>2.3</sup> is the relative contribution of the cosmic radiation according to [Gosse & Phillips (2001)](https://doi.org/10.1016/S0277-3791(00)00171-2). The final shielding factor is calculated as 1 minus the weighted average attennuation.
+
+In contrast to Balco's method, holes that make cosmic rays to cross the surface 3 or more times are not simulated, and their contributions are considered "in average" according to the differnt distances between the surface and the sample. As most of the samples are under the surface, we don't expect many subvertical rays, the ones that contribute more, to cross the surface 3 or more times, so we consider that this approximation provide accurate shielding factors.
+
+![Shielding_profile_calculations](https://github.com/angelrodes/Ben-Avon/assets/53089531/bc829d86-11c7-445f-a267-8e6aec6b89cf)\
+_Shielding factors were calculated for each DEM, each sample, and each attenuation length considered for spallation and muons. This graphs show the shielding calculations for the current DEM._
+
+![Shielding_models](https://github.com/angelrodes/Ben-Avon/assets/53089531/8e9ab89e-6e92-4629-8bd4-c66d94fcb323)\
+_Distriburtion of shielding factors of each DEM generated for each erosion model and the differen attenuation leghts._
+
 ## Glacial model
+
+
 
 # Results
 
@@ -105,10 +124,7 @@ _Model C: Ledge migration._
 
 # Conclusions
 
-- Fitted erosion models suggest that the tor fromed by differential erosion rather than by epigenesis (inherited relief) or lateral erosion. This erosion model could correspond to:
-  - Differential erosion due to compositional inhomogeneities in the granite.
-  - Differential erosion due to rheological inhomogeneities (e.g. joint spacing).
-  - Erosion of ice or sediments covering the tor surface (exhumation).
+- Fitted erosion models suggest that the tor fromed by differential erosion or by epigenesis (inherited relief) rather than lateral erosion.
 - Fitted glacial model indicate that the tor was exposed near the surface for at least 2 Ma and then covered by ice during part of the Pliocene and most of the Quaternary. However, the tor is in an area that has been ice-free at least since the Yonger Dryas.
 - Two scenarios could explain the conditions needed to achieve long periods of shielding since the Pliocene in a place that is now ice-free and exposed to cosmic radiation:
   - The tor was at the bed of a glacial valley at some point during the Pliocene and was covered by a thick till deposit that diasappeared during the Quaternary due to lateral migration of the glacial valley.
